@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1557566817">
+  <File Type="PWROPT-DRC" Name="PeselSearcher_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PeselSearcher_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PeselSearcher_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="PeselSearcher_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="PeselSearcher.tcl"/>
+  <File Type="OPT-HWDEF" Name="PeselSearcher.hwdef"/>
+  <File Type="RDI-RDI" Name="PeselSearcher.vdi"/>
+  <File Type="OPT-DCP" Name="PeselSearcher_opt.dcp"/>
+  <File Type="OPT-DRC" Name="PeselSearcher_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="PeselSearcher_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="PeselSearcher_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="PeselSearcher_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PeselSearcher_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PeselSearcher_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PeselSearcher_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PeselSearcher_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PeselSearcher_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PeselSearcher_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PeselSearcher_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PeselSearcher_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="PeselSearcher_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PeselSearcher_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PeselSearcher_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PeselSearcher_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PeselSearcher_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="PeselSearcher_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PeselSearcher_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PeselSearcher_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PeselSearcher_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PeselSearcher_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PeselSearcher_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="PeselSearcher.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="PeselSearcher_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="PeselSearcher.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PeselSearcher_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="PeselSearcher.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PeselSearcher_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="PeselSearcher.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PeselSearcher_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="PeselSearcher_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="PeselSearcher_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="PeselSearcher_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PeselSearcher_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PeselSearcher_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PeselSearcher_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PeselSearcher_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PeselSearcher_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PeselSearcher_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PeselSearcher_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PeselSearcher_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PeselSearcher_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PeselSearcher_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PeselSearcher_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="PeselSearcher.bit"/>
+  <File Type="BITSTR-RBT" Name="PeselSearcher.rbt"/>
+  <File Type="BITSTR-NKY" Name="PeselSearcher.nky"/>
+  <File Type="BITSTR-BMM" Name="PeselSearcher_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="PeselSearcher.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="PeselSearcher.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/year_checker.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sum_checker.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/month_checker.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/day_checker.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NumberChecker.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AndGate.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PeselCandidatAnalyzer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PeselSearcher.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/DataSniffer/DataSniffer.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/DataSniffer/hdl/DataSniffer_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PeselSearcher"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat May 11 11:31:52 2019
+# Process ID: 17132
+# Current directory: C:/git/SDPU/DataSniffer/DataSniffer.runs/DataSniffer_xlconcat_0_0_synth_1
+# Command line: vivado.exe -log DataSniffer_xlconcat_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DataSniffer_xlconcat_0_0.tcl
+# Log file: C:/git/SDPU/DataSniffer/DataSniffer.runs/DataSniffer_xlconcat_0_0_synth_1/DataSniffer_xlconcat_0_0.vds
+# Journal file: C:/git/SDPU/DataSniffer/DataSniffer.runs/DataSniffer_xlconcat_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DataSniffer_xlconcat_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 309.133 ; gain = 99.355
+INFO: [Synth 8-638] synthesizing module 'DataSniffer_xlconcat_0_0' [c:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/bd/DataSniffer/ip/DataSniffer_xlconcat_0_0/synth/DataSniffer_xlconcat_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [c:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/bd/DataSniffer/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (1#1) [c:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/bd/DataSniffer/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'DataSniffer_xlconcat_0_0' (2#1) [c:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/bd/DataSniffer/ip/DataSniffer_xlconcat_0_0/synth/DataSniffer_xlconcat_0_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 346.387 ; gain = 136.609
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 346.387 ; gain = 136.609
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.274 . Memory (MB): peak = 543.461 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 543.461 ; gain = 333.684
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 543.461 ; gain = 333.684
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 543.461 ; gain = 333.684
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 543.461 ; gain = 333.684
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 543.461 ; gain = 333.684
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:10 . Memory (MB): peak = 579.805 ; gain = 370.027
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:11 . Memory (MB): peak = 579.805 ; gain = 370.027
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:11 . Memory (MB): peak = 589.512 ; gain = 379.734
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 589.512 ; gain = 379.734
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 589.512 ; gain = 379.734
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 589.512 ; gain = 379.734
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 589.512 ; gain = 379.734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 589.512 ; gain = 379.734
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 589.512 ; gain = 379.734
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 589.512 ; gain = 379.734
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 602.230 ; gain = 369.262

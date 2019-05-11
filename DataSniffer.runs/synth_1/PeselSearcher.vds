@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat May 11 11:27:02 2019
+# Process ID: 7372
+# Current directory: C:/git/SDPU/DataSniffer/DataSniffer.runs/synth_1
+# Command line: vivado.exe -log PeselSearcher.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PeselSearcher.tcl
+# Log file: C:/git/SDPU/DataSniffer/DataSniffer.runs/synth_1/PeselSearcher.vds
+# Journal file: C:/git/SDPU/DataSniffer/DataSniffer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PeselSearcher.tcl -notrace
+Command: synth_design -top PeselSearcher -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9468 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 300.633 ; gain = 90.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PeselSearcher' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/PeselSearcher.v:23]
+	Parameter PESEL_NR_OF_DIGITS bound to: 4'b1011 
+INFO: [Synth 8-638] synthesizing module 'NumberChecker' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/NumberChecker.v:23]
+	Parameter ASCII_NUMBER_0 bound to: 8'b00110000 
+	Parameter ASCII_NUMBER_9 bound to: 8'b00111001 
+INFO: [Synth 8-256] done synthesizing module 'NumberChecker' (1#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/NumberChecker.v:23]
+INFO: [Synth 8-638] synthesizing module 'AndGate' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/AndGate.v:23]
+INFO: [Synth 8-256] done synthesizing module 'AndGate' (2#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/AndGate.v:23]
+INFO: [Synth 8-638] synthesizing module 'PeselCandidatAnalyzer' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/PeselCandidatAnalyzer.v:23]
+	Parameter INVALID_REG_VAL bound to: 16'b1111111111111111 
+	Parameter ASCII_NUMBER_0 bound to: 8'b00110000 
+INFO: [Synth 8-638] synthesizing module 'day_checker' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/day_checker.v:23]
+WARNING: [Synth 8-5788] Register day_ok_reg in module day_checker is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/day_checker.v:37]
+INFO: [Synth 8-256] done synthesizing module 'day_checker' (3#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/day_checker.v:23]
+INFO: [Synth 8-638] synthesizing module 'month_checker' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/month_checker.v:23]
+WARNING: [Synth 8-5788] Register month_ok_reg in module month_checker is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/month_checker.v:37]
+INFO: [Synth 8-256] done synthesizing module 'month_checker' (4#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/month_checker.v:23]
+INFO: [Synth 8-638] synthesizing module 'year_checker' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/year_checker.v:23]
+WARNING: [Synth 8-5788] Register year_ok_reg in module year_checker is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/year_checker.v:37]
+INFO: [Synth 8-256] done synthesizing module 'year_checker' (5#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/year_checker.v:23]
+INFO: [Synth 8-638] synthesizing module 'sum_checker' [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/sum_checker.v:23]
+WARNING: [Synth 8-5788] Register sum_ok_reg in module sum_checker is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/sum_checker.v:36]
+INFO: [Synth 8-256] done synthesizing module 'sum_checker' (6#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/sum_checker.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PeselCandidatAnalyzer' (7#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/PeselCandidatAnalyzer.v:23]
+WARNING: [Synth 8-350] instance 'myPeselCandidatAnalyzer' of module 'PeselCandidatAnalyzer' requires 7 connections, but only 6 given [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/PeselSearcher.v:92]
+INFO: [Synth 8-256] done synthesizing module 'PeselSearcher' (8#1) [C:/git/SDPU/DataSniffer/DataSniffer.srcs/sources_1/new/PeselSearcher.v:23]
+WARNING: [Synth 8-3331] design PeselCandidatAnalyzer has unconnected port enable
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 337.953 ; gain = 127.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 337.953 ; gain = 127.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 337.953 ; gain = 127.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "is_number_nxt" won't be mapped to RAM because it is too sparse
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 354.898 ; gain = 144.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 11    
+	   2 Input      9 Bit       Adders := 11    
+	   2 Input      8 Bit       Adders := 11    
++---Registers : 
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 22    
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AndGate 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 11    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module day_checker 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module month_checker 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module year_checker 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module sum_checker 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PeselCandidatAnalyzer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module NumberChecker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'stage[10].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_09_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[10].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_09_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[10].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_09_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[10].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_09_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[7].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_06_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[3].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_02_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[7].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_06_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[3].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_02_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[7].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_06_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[3].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_02_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[7].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_06_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[3].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_02_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[1].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_00_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[1].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_00_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[1].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_00_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[1].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_00_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[2].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_01_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[2].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_01_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[2].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_01_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[2].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_01_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[4].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_03_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[4].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_03_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[4].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_03_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[4].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_03_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[5].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_04_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[5].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_04_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[5].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_04_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[5].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_04_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[6].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_05_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[6].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_05_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[6].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_05_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[6].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_05_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[8].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_07_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[8].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_07_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[8].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_07_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[8].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_07_reg[3]'
+INFO: [Synth 8-3886] merging instance 'stage[9].myNumberChecker/character_out_reg[0]' (FDC) to 'myAndGate/character_out_08_reg[0]'
+INFO: [Synth 8-3886] merging instance 'stage[9].myNumberChecker/character_out_reg[1]' (FDC) to 'myAndGate/character_out_08_reg[1]'
+INFO: [Synth 8-3886] merging instance 'stage[9].myNumberChecker/character_out_reg[2]' (FDC) to 'myAndGate/character_out_08_reg[2]'
+INFO: [Synth 8-3886] merging instance 'stage[9].myNumberChecker/character_out_reg[3]' (FDC) to 'myAndGate/character_out_08_reg[3]'
+INFO: [Synth 8-3886] merging instance 'myPeselCandidatAnalyzer/MyMonthChecker/month_ok_reg_P' (FDP) to 'myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_P'
+INFO: [Synth 8-3886] merging instance 'myPeselCandidatAnalyzer/MyMonthChecker/month_ok_reg_C' (FDC) to 'myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myPeselCandidatAnalyzer/MyMonthChecker/month_ok_reg_LDC )
+INFO: [Synth 8-3886] merging instance 'myPeselCandidatAnalyzer/MyYearChecker/year_ok_reg_P' (FDP) to 'myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_P'
+INFO: [Synth 8-3886] merging instance 'myPeselCandidatAnalyzer/MyYearChecker/year_ok_reg_C' (FDC) to 'myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myPeselCandidatAnalyzer/MyYearChecker/year_ok_reg_LDC )
+INFO: [Synth 8-3886] merging instance 'myPeselCandidatAnalyzer/MyDayChecker/day_ok_reg_P' (FDP) to 'myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_P'
+INFO: [Synth 8-3886] merging instance 'myPeselCandidatAnalyzer/MyDayChecker/day_ok_reg_C' (FDC) to 'myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myPeselCandidatAnalyzer/MyDayChecker/day_ok_reg_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_P )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_C )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myPeselCandidatAnalyzer/MySumChecker/sum_ok_reg_LDC )
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[3]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[2]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[1]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/character_out_reg[0]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[1].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[1].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[1].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[1].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[2].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[2].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[2].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[2].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[3].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[3].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[3].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[3].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[4].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[4].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[4].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[4].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[5].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[5].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[5].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[5].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_05_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_05_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_05_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_05_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_04_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_04_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_04_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_04_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_03_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_03_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_03_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_03_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_02_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_02_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_02_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_02_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_01_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_01_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_01_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_01_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_00_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_00_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_00_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_00_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[6].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[6].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[6].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[6].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[7].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[7].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[7].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[7].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[8].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[8].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[8].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[8].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[9].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[9].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[9].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[9].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[10].myNumberChecker/character_out_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[10].myNumberChecker/character_out_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[10].myNumberChecker/character_out_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[10].myNumberChecker/character_out_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[3]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[2]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[1]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_10_reg[0]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_09_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_09_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_09_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_09_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_08_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_08_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_08_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_08_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_06_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_06_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_06_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_06_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_07_reg[7]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_07_reg[6]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_07_reg[5]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (myAndGate/character_out_07_reg[4]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/index_reg[15]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/index_reg[14]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/index_reg[13]) is unused and will be removed from module PeselSearcher.
+WARNING: [Synth 8-3332] Sequential element (stage[0].myNumberChecker/index_reg[12]) is unused and will be removed from module PeselSearcher.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 459.410 ; gain = 248.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 459.410 ; gain = 248.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    17|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    17|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 181 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 462.602 ; gain = 237.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 462.602 ; gain = 252.180
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+85 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 538.117 ; gain = 318.738
+INFO: [Common 17-1381] The checkpoint 'C:/git/SDPU/DataSniffer/DataSniffer.runs/synth_1/PeselSearcher.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 538.117 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 11 11:27:33 2019...
